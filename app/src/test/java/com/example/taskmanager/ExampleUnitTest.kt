@@ -1,4 +1,4 @@
-package com.example.kotlinbasics
+package com.example.taskmanager
 
 import org.junit.Test
 

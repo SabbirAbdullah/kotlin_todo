@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">KotlinBasics</string>
+    <string name="app_name">Task Manager</string>
 </resources>
