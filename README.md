@@ -69,7 +69,7 @@ com.taskmanager/
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/yourusername/task-manager-app.git
+   git clone https://github.com/SabbirAbdullah/kotlin_task_manager.git
    cd task-manager-app
    ```
 
@@ -111,15 +111,7 @@ com.taskmanager/
 
 ---
 
-## 📱 Screenshots
 
-> _Add your screenshots here_
-
-| Login | Dashboard | Task List | Profile |
-|-------|-----------|-----------|---------|
-| ![login]() | ![dashboard]() | ![tasks]() | ![profile]() |
-
----
 
 ## 📄 License
 
