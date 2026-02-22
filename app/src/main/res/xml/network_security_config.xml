@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    network_security_config.xml
+    Allows cleartext HTTP traffic to your local development server.
+    192.168.x.x / 10.x.x.x = local network (safe for dev only).
+    Remove the <domain-config> block before releasing to production.
+-->
+<network-security-config>
+
+    <!-- ── Production: enforce HTTPS everywhere by default ── -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+
+    <!-- ── Development only: allow HTTP on local network IPs ── -->
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Your local machine IP (change if your IP changes) -->
+        <domain includeSubdomains="false">192.168.0.180</domain>
+
+        <!-- Common local network ranges — add whichever you use -->
+        <domain includeSubdomains="false">192.168.0.1</domain>
+        <domain includeSubdomains="false">10.0.2.2</domain>   <!-- Android emulator → host -->
+        <domain includeSubdomains="false">localhost</domain>
+        <domain includeSubdomains="false">127.0.0.1</domain>
+    </domain-config>
+
+</network-security-config>

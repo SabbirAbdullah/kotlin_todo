@@ -1,6 +1,7 @@
 package com.example.taskmanager.data.local.dao
 
 import androidx.room.*
+import com.example.taskmanager.data.local.entity.TaskEntity
 
 import kotlinx.coroutines.flow.Flow
 

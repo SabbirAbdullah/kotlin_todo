@@ -9,7 +9,7 @@
 # ── Build Tools ───────────────────────────────────────────────────────────────
 # AGP 8.9.2 is the latest STABLE release (Feb 2026).
 # Requires Gradle 8.13 (set in gradle-wrapper.properties).
-agp                              = "8.9.2"
+agp                              = "8.13.2"
 
 # ── Kotlin ────────────────────────────────────────────────────────────────────
 # 2.1.20 is latest stable. K2 compiler is default.

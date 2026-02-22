@@ -2,14 +2,21 @@ package com.example.taskmanager.presentation.navigation
 
 import androidx.compose.animation.AnimatedContentTransitionScope
 import androidx.compose.animation.ExperimentalAnimationApi
+import androidx.compose.animation.core.tween
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import androidx.navigation.navArgument
 import com.example.taskmanager.presentation.auth.forgot.ForgotPasswordScreen
 import com.example.taskmanager.presentation.auth.login.LoginScreen
 import com.example.taskmanager.presentation.auth.register.RegisterScreen
 import com.example.taskmanager.presentation.dashboard.DashboardScreen
+import com.example.taskmanager.presentation.profile.ProfileScreen
+import com.example.taskmanager.presentation.task.create.CreateTaskScreen
+import com.example.taskmanager.presentation.task.detail.TaskDetailScreen
+import com.example.taskmanager.presentation.task.list.TaskListScreen
 
 
 sealed class Screen(val route: String) {

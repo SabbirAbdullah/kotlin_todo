@@ -1,5 +1,6 @@
 package com.example.taskmanager.data.remote.dto
 
+
 import com.google.gson.annotations.SerializedName
 
 // ── Request DTOs ──────────────────────────────────────────────────────────────

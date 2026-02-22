@@ -13,19 +13,3 @@ data class TaskEntity(
     val isSynced: Boolean = true,
     val updatedAt: Long = System.currentTimeMillis()
 )
-
-@Entity(tableName = "user")
-data class UserEntity(
-    @PrimaryKey val id: Int,
-    val name: String,
-    val email: String
-)
-
-@Entity(tableName = "dashboard_cache")
-data class DashboardEntity(
-    @PrimaryKey val id: Int = 1,
-    val totalTasks: Int,
-    val completedTasks: Int,
-    val pendingTasks: Int,
-    val cachedAt: Long = System.currentTimeMillis()
-)

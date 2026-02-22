@@ -18,7 +18,7 @@ import javax.inject.Singleton
 object NetworkModule {
 
     // ⚠️ Replace with your actual backend base URL
-    private const val BASE_URL = "https://api.yourapp.com/"
+    private const val BASE_URL = "http://192.168.0.180:3000/"
 
     @Provides
     @Singleton

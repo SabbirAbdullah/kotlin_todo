@@ -1,5 +1,6 @@
 package com.example.taskmanager.data.remote.dto
 
+
 import com.google.gson.annotations.SerializedName
 
 // ── Request DTOs ──────────────────────────────────────────────────────────────
@@ -35,4 +36,5 @@ data class DashboardResponse(
     @SerializedName("totalTasks") val totalTasks: Int,
     @SerializedName("completedTasks") val completedTasks: Int,
     @SerializedName("pendingTasks") val pendingTasks: Int
-)
+) {
+}

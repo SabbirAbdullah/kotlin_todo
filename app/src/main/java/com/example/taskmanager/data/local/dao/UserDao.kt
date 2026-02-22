@@ -21,15 +21,3 @@ interface UserDao {
     suspend fun clearUser()
 }
 
-@Dao
-interface DashboardDao {
-
-    @Query("SELECT * FROM dashboard_cache LIMIT 1")
-    fun getDashboardFlow(): Flow<DashboardEntity?>
-
-    @Upsert
-    suspend fun upsertDashboard(dashboard: DashboardEntity)
-
-    @Query("DELETE FROM dashboard_cache")
-    suspend fun clear()
-}
